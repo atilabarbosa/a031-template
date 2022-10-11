@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
 import logo from "./img/logo.png";
-
-export default function App() {
+import {Footer} from './components/footer'
+import {RedesSociais} from './components/redessociais'
+ function App() {
   const onClickBotao = () => {
     alert("Botão foi clicado!");
   };
@@ -14,6 +15,7 @@ export default function App() {
         <div>
           <img className={"Logo"} src={logo} alt={"logo"} />
         </div>
+        <RedesSociais/>
         <div>
           <a href="https://labenu.com.br">Site da Labenu</a>
         </div>
@@ -21,6 +23,8 @@ export default function App() {
           <button onClick={onClickBotao}> Clique aqui! </button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
+export default App
